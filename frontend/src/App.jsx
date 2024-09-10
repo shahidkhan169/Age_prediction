@@ -25,7 +25,7 @@ function App() {
     setError(null);
 
     try {
-      const response = await axios.post('http://localhost:5000/predict', formData, {
+      const response = await axios.post('https://age-api.onrender.com/predict', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
